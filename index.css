@@ -1,0 +1,48 @@
+/* Put your style information here! */
+h1 {
+    /* text-align: center; */
+
+    font-size: 3em;
+    margin: 0px;
+    /* background-color: #FDE37A */
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h6 {
+    font-size: 1em;
+    font-family: "Times New Roman";
+}
+ol {
+    font-size: 1em;
+}
+
+body {
+  background-color: #;
+  margin: 5% 10%;
+  /* text-align: center */
+}
+
+head {
+    margin: 50%;
+}
+
+p {
+    font-size:150%;
+    font-family: Abril Fatface;
+}
+
+@media only screen and (max-width: 400px) {
+    li {
+        font-size: 50%;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .grid-item2 {
+    flex-basis: 30px;
+  }
+} */

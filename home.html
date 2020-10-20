@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Bagel Gourmet Cafe Menu</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+    <div class="header-flex-container">
+        <div class="grid-item" style="flex-basis: 150px;flex-shrink: 1.25">
+            <!-- <img src="bgcLogo.png" alt="Bagel Gourmet Cafe Logo" style="width:100%;"> -->
+            <picture>
+                <source media="(min-width: 400px)" srcset="bgcLogo.png">
+                <source media="(min-width: 0px)" srcset="logoSmall.png">
+                <img src="logoSmall.png">
+            </picture>
+        </div>
+        <div class="grid-item2" style="align-self: center;">
+            <ul>
+                <li><a href="default.asp" style="font-family: Abril Fatface";>Home</a></li>
+                <li><a class="menu" href="news.asp" style="font-family: Abril Fatface";>Menu</a></li>
+                <li><a href="news.asp" style="font-family: Abril Fatface";>Location</a></li>
+                <li><a href="contact.asp" style="font-family: Abril Fatface";>Contact</a></li>
+                <li><a href="about.asp" style="font-family: Abril Fatface";>About</a></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+
+        .header-flex-container {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap; /*this is default*/
+            /* flex-direction: row; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            /* padding: 0px;  ---> this is updown padding*/
+        }
+        a:link {
+            color: black;
+            text-decoration:none;
+            font-size:150%
+        }
+        a.menu:link {color:rgba(133, 0, 0, 1)}
+        a:active {
+            color: #BC0000;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0px; /* margin added above nav bar */
+        }
+        li {
+            float: left;
+        }
+
+        a {
+            display: block;
+            padding: 10px; /* padding between nav bar items */
+        }
+
+        a:hover {
+            background-color: #A6A6A6;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* background-color: #f1f1f1; */
+        }
+
+        .dropdown-content p:hover {background-color: #f1f1f1}
+    </style>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <style>
+        .burrito-flex-container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            /* padding: 0px;  ---> this is updown padding*/
+        }
+        .bagel-flex-container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .img {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+
+        }
+        img {
+            border-radius: 10px;
+        }
+
+        .selection-flex-container {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap; /*this is default*/
+            /* flex-direction: row; */
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+            /* padding: 0px;  ---> this is updown padding*/
+        }
+
+        .description-container {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .dropdown {
+            margin-left: 25%;
+        }
+
+
+    </style>
+
+    <div class="selection-flex-container">
+        <div class="grid-item" style="flex-basis: 150px;">
+            <div class="dropdown">
+                <span><img src="hamburger.png" alt="Dropdown selection button" style="width:50%";></span>
+                <div class="dropdown-content">
+                    <p>BURRITOS</p>
+                    <p>BAGELS</p>
+                    <p>WRAPS</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <p style="font-family: Abril Fatface";>
+                BURRITOS
+            </p>
+        </div>
+    </div>
+
+    <div class="burrito-flex-container">
+        <div class="grid-item">
+            <div class="img">
+                <img src="chickenBurrito.png" alt="Chicken Burrito'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> Chicken burrito</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $9 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="breakfastBurrito.png" alt="Breakfast Burrito'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> Breakfast burrito</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $5 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="beanBurrito.png" alt="Bean Burrito'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> Bean burrito</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $9 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="southwestBurrito.png" alt="Southwest Burrito'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> southwest burrito</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $9 </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="selection-flex-container">
+        <div class="grid-item" style="flex-basis: 150px;">
+            <div class="dropdown">
+                <span><img src="hamburgerClear.png" alt="Dropdown selection button" style="width:50%";></span>
+
+            </div>
+        </div>
+        <div class="grid-item">
+            <p>
+                BAGELS
+            </p>
+        </div>
+    </div>
+
+    <div class="bagel-flex-container">
+        <div class="grid-item">
+            <div class="img">
+                <img src="plainBagel.png" alt="Plain Bagel'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> Plain bagel</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $2 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="assorted.png" alt="assorted Bagels'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> assorted bagels</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $3 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="loxBagel.png" alt="Lox Bagel'" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6> Lox bagel</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $10 </h6>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="img">
+                <img src="bagelSandwich.png" alt="Bagel sandwich" style="width:100%;">
+            </div>
+            <div class="description-container">
+                <div class="grid-item">
+                    <h6>bagel sandwich</h6>
+                </div>
+                <div class="grid-item">
+                    <h6> $5 </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>

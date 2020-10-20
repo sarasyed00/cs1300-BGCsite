@@ -35,7 +35,7 @@ p {
     font-family: Abril Fatface;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     li {
         font-size: 50%;
     }
